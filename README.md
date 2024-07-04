@@ -14,3 +14,4 @@ In recent months, both team members participated in conflicts in Israel and expe
 3. Create a range of medical scenarios with varying levels of complexity.
 4. Implement a scoring and feedback system to evaluate user performance.
 5. Provide an accessible platform for non-professionals to practice medical procedures.
+![image](https://github.com/Ronaldal/VRescue/assets/119335023/9f8a4fce-e1c9-44b9-b8f5-6b02839722ae)
