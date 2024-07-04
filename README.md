@@ -32,3 +32,10 @@ One user that gives the medical treatment. The main player is part of a situatio
 ### Screen overview
 #### Main menu 
 The game main menu will display the home screen of the simulator where the player can choose the option he wants. check the mannequin and VR equipment, select medical scenario, treatment history or exit.
+
+### Methodology
+For this project, we'll be using a mix of hardware and software to make a virtual reality medical simulator. The main parts we'll need are a main processing unit like Raspberry Pi or Arduino uno as the main computer, an ESP32 or Arduino microcontroller for connecting sensors, a motion sensor like MPU6050, and a VR kit so users can experience it in virtual reality.
+The main processing unit will be the brain of the system, running the Unity game engine and handling all the main simulation stuff. In the Unity platform we will create the virtual environment and let users interact with the 3D medical scenarios.
+To track the movements of the physical mannequin, we'll attach an motion sensor to it. An ESP32 or Arduino Uno can be the sensor controller, connecting to the motion sensor , processing the raw sensor data, and sending it over to the main processing unit through a wired or wireless connection.
+The main processing unit will constantly get this real-time motion data from the microcontroller and use it to update the position and movements of the virtual mannequin inside the Unity environment. This way, the virtual mannequin will mimic the exact movements of the physical one.
+With the VR kit, users can interact with mannequin and to perform the medical treatment.
