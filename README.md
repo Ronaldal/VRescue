@@ -23,11 +23,11 @@ One user that gives the medical treatment. The main player is part of a situatio
 ### Screens Structure
 1.Main menu
 1.1. Check the mannequin and equipment is connected.
-1.2. Select medical scenario
- 1.2.1. Driving accident
- 1.2.2. Battle field
-1.3. Check my treatment history and medical information
-1.4. Exit
+1.2. Select medical scenario.
+ 1.2.1. Driving accident.
+ 1.2.2. Battle field.
+1.3. Check my treatment history and medical information.
+1.4. Exit.
 
 ### Screen overview
 #### Main menu 
