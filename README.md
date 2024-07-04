@@ -15,3 +15,20 @@ In recent months, both team members participated in conflicts in Israel and expe
 4. Implement a scoring and feedback system to evaluate user performance.
 5. Provide an accessible platform for non-professionals to practice medical procedures.
 
+
+### Game interface
+Game users:
+One user that gives the medical treatment. The main player is part of a situation in which he functions as a one of others and not necessarily the one who leads the situation (for example : the one who seats next to driver) and he actually performs the medical treatment on the person he is called upon to treat.
+
+### Screens Structure
+1.Main menu
+1.1. Check the mannequin and equipment is connected.
+1.2. Select medical scenario
+ 1.2.1. Driving accident
+ 1.2.2. Battle field
+1.3. Check my treatment history and medical information
+1.4. Exit
+
+### Screen overview
+#### Main menu 
+The game main menu will display the home screen of the simulator where the player can choose the option he wants. check the mannequin and VR equipment, select medical scenario, treatment history or exit.
