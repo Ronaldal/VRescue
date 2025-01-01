@@ -1,0 +1,106 @@
+# Unity Generated Files
+[Ll]ibrary/
+[Tt]emp/
+[Oo]bj/
+[Bb]uild/
+[Bb]uilds/
+[Ll]ogs/
+[Mm]emoryCaptures/
+
+# Visual Studio / Rider
+.vscode/
+*.code-workspace
+.idea/
+*.suo
+*.user
+*.userprefs
+*.csproj
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+
+# Unity Auto-generated
+*.unityproj
+*.asset
+*.sln
+*.suo
+*.tmp
+*.vcs
+*.log
+*.apk
+*.unitypackage
+
+# TextMeshPro
+[Tt]ext[Mm]esh[Pp]ro/
+
+# WebGL Builds
+[Ww]eb[Gg][Ll]/
+
+# Godot / Other Engines
+[Gg]odot/
+
+# Crash Reports
+[Cc]rash[Rr]eports/
+
+# Environment Specific
+/Assets/StreamingAssets/
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+Desktop.ini
+
+# Linux
+*~
+
+# Other
+*.bak
+*.swp
+*.tmp
+*.tmp.*
+*.bak.*
+*.lnk
+
+# Exclude Builds Folder
+/[Bb]uild/
+/[Bb]uilds/
+
+# Local Unity Generated Files
+*.pidb
+*.unitypackage
+*.fbx*
+*.dae
+*.mb
+*.ma
+
+# Ignore Logs
+*.log
+
+# Ignore Gradle Cache
+.gradle/
+
+# Ignore JetBrains IDE Files
+.idea/
+*.iml
+
+# Ignore Asset Store Cache
+/Assets/AssetStoreTools/
+
+# Ignore Unity Packages Cache
+/[Pp]ackages/
+
+# Ignore Addressable Asset Data
+/Assets/AddressableAssetsData/*/*.bin
+
+# Ignore Shader Cache
+/Library/ShaderCache/
+
+# Ignore ProBuilder Auto Save
+/Assets/ProBuilder/AutoSave/*
+
+# Ignore Plastic SCM Files
+/Assets/PlasticAssets/
