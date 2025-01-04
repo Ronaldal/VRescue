@@ -1,0 +1,82 @@
+# Unity URP 3D Git Ignore File
+
+# OS generated files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Visual Studio / Rider
+*.csproj
+*.sln
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.opendb
+*.VC.db
+*.unityproj
+
+# Unity generated files
+Library/
+Temp/
+Obj/
+Build/
+Builds/
+Logs/
+UserSettings/
+
+# Cache and player data
+*.apk
+*.aab
+*.unitypackage
+
+# Lightmapping
+LightmapSnapshot*
+LightingData*
+
+# URP-specific
+Assets/**/*.shadergraph.meta
+Assets/**/*.shadergraph
+Assets/**/*.compute
+Assets/**/*.asset
+
+# Meta files
+*.meta
+
+# Crash reports
+sysinfo.txt
+
+# Collaborate
+*.collab
+
+# MemoryCaptures
+MemoryCaptures/
+
+# Build artifacts
+*.ilk
+*.exp
+*.iobj
+*.ipdb
+*.iso
+
+# Packed Addressables
+Assets/StreamingAssets/aa/
+
+# Logs
+*.log
+
+# TextMeshPro
+Assets/TextMesh Pro/
+
+# Rider project settings
+.idea/
+*.iml
+*.ipr
+*.iws
+
+# Unity Asset Store tools
+Assets/AssetStoreTools*
