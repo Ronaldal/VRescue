@@ -86,6 +86,10 @@ namespace StarterAssets
         private float _rotationVelocity;
         private float _verticalVelocity;
         private float _terminalVelocity = 53.0f;
+        private bool isDriving = false;  // Track if the player is inside a car
+        private bool nearCar = false;    // Detect if the player is near a car
+        //[SerializeField] private GameObject car;           // Assign the car in Unity Inspector
+
 
         // timeout deltatime
         private float _jumpTimeoutDelta;
@@ -159,6 +163,21 @@ namespace StarterAssets
             JumpAndGravity();
             GroundedCheck();
             Move();
+
+           // if (!isDriving) // 🚶 Player can move only if not driving
+            //{
+        
+            //}
+           /* if (Input.GetKeyDown(KeyCode.E) && nearCar)
+            {
+                EnterCar();
+            }
+
+            // 🚶 Exit car when pressing "F"
+            if (Input.GetKeyDown(KeyCode.F) && isDriving)
+            {
+                ExitCar();
+            }*/
         }
 
         private void LateUpdate()
@@ -278,6 +297,43 @@ namespace StarterAssets
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
             }
         }
+       /* void EnterCar()
+        {
+            isDriving = true;  // 🚗 Player is now driving
+            this.gameObject.SetActive(false);  // Hide the player
+
+            // Enable car driving
+            car.GetComponent<CarUserControl>().SetCanDrive(true);
+        }
+
+        void ExitCar()
+        {
+            isDriving = false; // 🚶 Player can move again
+            this.gameObject.SetActive(true); // Show the player
+
+            // Disable car driving
+            car.GetComponent<CarUserControl>().SetCanDrive(false);
+
+            // Position the player next to the car
+            this.transform.position = car.transform.position + new Vector3(2, 0, 0);
+        }
+
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject == car)
+            {
+                nearCar = true;
+            }
+        }
+
+        void OnTriggerExit(Collider other)
+        {
+            if (other.gameObject == car)
+            {
+                nearCar = false;
+            }
+        }*/
+
 
         private void JumpAndGravity()
         {

@@ -747,7 +747,10 @@ PlayerSettings:
   webGLCloseOnQuit: 0
   webWasm2023: 0
   scriptingDefineSymbols:
-    Standalone: pHUMANOID4;hULTRALEAP;hCUSTOM
+    Android: CROSS_PLATFORM_INPUT;MOBILE_INPUT
+    Standalone: pHUMANOID4;hULTRALEAP;hCUSTOM;CROSS_PLATFORM_INPUT
+    Windows Store Apps: MOBILE_INPUT
+    iPhone: CROSS_PLATFORM_INPUT;MOBILE_INPUT
   additionalCompilerArguments: {}
   platformArchitecture: {}
   scriptingBackend: {}
