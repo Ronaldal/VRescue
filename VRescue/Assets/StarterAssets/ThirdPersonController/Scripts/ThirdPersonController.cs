@@ -1,4 +1,11 @@
-﻿ using UnityEngine;
+﻿using UnityEngine;
+using System.Collections;
+
+using Cinemachine;
+
+
+
+
 #if ENABLE_INPUT_SYSTEM 
 using UnityEngine.InputSystem;
 #endif
@@ -87,6 +94,16 @@ namespace StarterAssets
         private float _verticalVelocity;
         private float _terminalVelocity = 53.0f;
 
+        /// <summary>
+        /// ////////////////
+        /// </summary>
+        private bool isDriving = false;  // Track if the player is inside a car
+        private bool nearCar = false;    // Detect if the player is near a car
+        private GameObject car;
+        public GameObject enterCarText;
+        public CinemachineVirtualCamera playerCamera;
+        public CinemachineVirtualCamera carCamera;
+
         // timeout deltatime
         private float _jumpTimeoutDelta;
         private float _fallTimeoutDelta;
@@ -154,12 +171,33 @@ namespace StarterAssets
 
         private void Update()
         {
+            //// 🚨 Prevent Update from running if script is disabled or player is inactive
+            //if (!this.enabled || !gameObject.activeSelf || isDriving) return;
+            //Debug.Log("🚗 PrometeoCarController is ACTIVE! Checking input...");
+
+
             _hasAnimator = TryGetComponent(out _animator);
+
+            if (nearCar && Input.GetKeyDown(KeyCode.E) && !isDriving)
+            {
+                Debug.Log("✅ 'E' Pressed! Trying to enter the car...");
+                EnterCar();
+            }
+            if (isDriving && Input.GetKeyDown(KeyCode.F))
+            {
+                Debug.Log("✅ 'F' Pressed! Trying to exit the car...");
+                ExitCar();
+            }
+        
 
             JumpAndGravity();
             GroundedCheck();
             Move();
+        
+
         }
+
+
 
         private void LateUpdate()
         {
@@ -177,6 +215,7 @@ namespace StarterAssets
 
         private void GroundedCheck()
         {
+            if (!gameObject.activeSelf) return;
             // set sphere position, with offset
             Vector3 spherePosition = new Vector3(transform.position.x, transform.position.y - GroundedOffset,
                 transform.position.z);
@@ -213,6 +252,10 @@ namespace StarterAssets
 
         private void Move()
         {
+            if (!this.enabled || !gameObject.activeSelf || isDriving)
+            {
+                return;
+            }
             // set target speed based on move speed, sprint speed and if sprint is pressed
             float targetSpeed = _input.sprint ? SprintSpeed : MoveSpeed;
 
@@ -278,9 +321,161 @@ namespace StarterAssets
                 _animator.SetFloat(_animIDMotionSpeed, inputMagnitude);
             }
         }
+      
+        void OnTriggerEnter(Collider other)
+        {
+            if (other.gameObject.CompareTag("Car"))
+            {
+                Debug.Log("🚗 Player is near the car!");
+                nearCar = true;
+                enterCarText.SetActive(true); // Show UI Prompt
+                car = other.gameObject;       // Save the car reference
+            }
+        }
+        void OnTriggerExit(Collider other)
+        {
+            if (other.gameObject.CompareTag("Car"))
+            {
+                Debug.Log("🚗 Player left the car area.");
+                nearCar = false;
+                enterCarText.SetActive(false); // Hide UI Prompt
+               // car = null;                    // Remove the car reference
+            }
+        }
+        void EnterCar()
+        {
+            Debug.Log("🚗 EnterCar() function started!");
+
+            isDriving = true;  // Player is now driving
+
+            // Hide the player
+            _controller.enabled = false;
+            foreach (var renderer in GetComponentsInChildren<Renderer>())
+            {
+                renderer.enabled = false;
+            }
+
+            if (car != null)
+            {
+                Debug.Log("✅ Car found! Enabling car controls.");
+
+                // ✅ ENABLE CAR CONTROLS
+                PrometeoCarController carController = car.GetComponent<PrometeoCarController>();
+                if (carController != null)
+                {
+                    carController.enabled = true;
+                    carController.isPlayerInside = true; // Make sure the player can drive
+                    Debug.Log("🚗 Car controls ENABLED!");
+                }
+                else
+                {
+                    Debug.LogError("❌ CarController script NOT found on the car!");
+                }
+
+                SetCameraTarget(true);  // 🚗 Switch to Car Camera
+            }
+            else
+            {
+                Debug.LogError("❌ Car is NULL! Did not enable car controls.");
+            }
+
+            enterCarText.SetActive(false); // Hide UI prompt
+        }
+
+
+        void ExitCar()
+        {
+            Debug.Log("🚶‍♂️ ExitCar() function started!");
+
+            isDriving = false; // ✅ Player is now walking again
+
+            // Enable Player
+            _controller.enabled = true;
+            foreach (var renderer in GetComponentsInChildren<Renderer>())
+            {
+                renderer.enabled = true;
+            }
+
+            if (car != null)
+            {
+                Debug.Log("✅ Exiting car, repositioning player.");
+
+                // ✅ Ensure we get the correct player object
+                Transform playerRoot = transform;
+                if (playerRoot == null)
+                {
+                    Debug.LogError("❌ Player root transform is NULL!");
+                    return;
+                }
+
+                // ✅ Find the exit position (left side of the car)
+                Vector3 exitOffset = car.transform.right * -2f; // Exit on driver's side
+                Vector3 exitPosition = car.transform.position + exitOffset;
+
+                Debug.Log($"📌 Exit Position Calculated: {exitPosition}");
+
+                // ✅ Temporarily disable CharacterController to move the player
+                _controller.enabled = false;
+                playerRoot.position = exitPosition; // Move player next to the car
+                _controller.enabled = true;  // Re-enable CharacterController
+
+                Debug.Log($"🚶‍♂️ Player New Position: {playerRoot.position}");
+
+                // ✅ Stop the car from moving when exiting
+                PrometeoCarController carController = car.GetComponent<PrometeoCarController>();
+                if (carController != null)
+                {
+                    carController.isPlayerInside = false;
+                    carController.enabled = false; // Disable driving
+                    carController.carSpeed = 0;    // Set car speed to zero
+                    Debug.Log("🚗 Car controls DISABLED!");
+                }
+                else
+                {
+                    Debug.LogError("❌ CarController script NOT found on the car!");
+                }
+            }
+            else
+            {
+                Debug.LogError("❌ Car reference is NULL! Could not disable car.");
+            }
+
+            SetCameraTarget(false); // 🚶 Switch back to Player Camera
+        }
+
+
+        void SetCameraTarget(bool isDriving)
+        {
+            if (isDriving)
+            {
+                // Switch to Car Camera
+                carCamera.Priority = 11;
+                playerCamera.Priority = 9;
+
+                Transform carTarget = car.transform.Find("CarCameraTarget"); // Find the target
+
+                if (carTarget != null)
+                {
+                    carCamera.Follow = carTarget;
+                }
+                else
+                {
+                    Debug.LogError("❌ CarCameraTarget not found! Make sure it's a child of the car.");
+                }
+            }
+            else
+            {
+                // Switch Back to Player Camera
+                playerCamera.Priority = 11;
+                carCamera.Priority = 9;
+                carCamera.Follow = null; // Reset car camera follow target
+            }
+        }
+
 
         private void JumpAndGravity()
         {
+            if (!gameObject.activeSelf) return;
             if (Grounded)
             {
                 // reset the fall timeout timer
