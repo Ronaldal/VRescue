@@ -8,6 +8,7 @@ public class Injured2 : MonoBehaviour {
 
     void Start()
     {
+        
         animator = GetComponent<Animator>(); // Get the Animator
     }
 
