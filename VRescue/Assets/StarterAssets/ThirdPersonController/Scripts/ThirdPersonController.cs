@@ -180,12 +180,12 @@ namespace StarterAssets
 
             if (nearCar && Input.GetKeyDown(KeyCode.E) && !isDriving)
             {
-                Debug.Log("✅ 'E' Pressed! Trying to enter the car...");
+                //Debug.Log("✅ 'E' Pressed! Trying to enter the car...");
                 EnterCar();
             }
             if (isDriving && Input.GetKeyDown(KeyCode.F))
             {
-                Debug.Log("✅ 'F' Pressed! Trying to exit the car...");
+              //  Debug.Log("✅ 'F' Pressed! Trying to exit the car...");
                 ExitCar();
             }
         
@@ -326,7 +326,7 @@ namespace StarterAssets
         {
             if (other.gameObject.CompareTag("Car"))
             {
-                Debug.Log("🚗 Player is near the car!");
+                //Debug.Log("🚗 Player is near the car!");
                 nearCar = true;
                 enterCarText.SetActive(true); // Show UI Prompt
                 car = other.gameObject;       // Save the car reference
@@ -336,7 +336,7 @@ namespace StarterAssets
         {
             if (other.gameObject.CompareTag("Car"))
             {
-                Debug.Log("🚗 Player left the car area.");
+                //Debug.Log("🚗 Player left the car area.");
                 nearCar = false;
                 enterCarText.SetActive(false); // Hide UI Prompt
                // car = null;                    // Remove the car reference
@@ -344,7 +344,7 @@ namespace StarterAssets
         }
         void EnterCar()
         {
-            Debug.Log("🚗 EnterCar() function started!");
+            //Debug.Log("🚗 EnterCar() function started!");
 
             isDriving = true;  // Player is now driving
 
@@ -357,7 +357,7 @@ namespace StarterAssets
 
             if (car != null)
             {
-                Debug.Log("✅ Car found! Enabling car controls.");
+               // Debug.Log("✅ Car found! Enabling car controls.");
 
                 // ✅ ENABLE CAR CONTROLS
                 PrometeoCarController carController = car.GetComponent<PrometeoCarController>();
@@ -365,7 +365,7 @@ namespace StarterAssets
                 {
                     carController.enabled = true;
                     carController.isPlayerInside = true; // Make sure the player can drive
-                    Debug.Log("🚗 Car controls ENABLED!");
+                  // Debug.Log("🚗 Car controls ENABLED!");
                 }
                 else
                 {
@@ -385,7 +385,7 @@ namespace StarterAssets
 
         void ExitCar()
         {
-            Debug.Log("🚶‍♂️ ExitCar() function started!");
+           // Debug.Log("🚶‍♂️ ExitCar() function started!");
 
             isDriving = false; // ✅ Player is now walking again
 
@@ -398,7 +398,7 @@ namespace StarterAssets
 
             if (car != null)
             {
-                Debug.Log("✅ Exiting car, repositioning player.");
+                //Debug.Log("✅ Exiting car, repositioning player.");
 
                 // ✅ Ensure we get the correct player object
                 Transform playerRoot = transform;
@@ -412,14 +412,14 @@ namespace StarterAssets
                 Vector3 exitOffset = car.transform.right * -2f; // Exit on driver's side
                 Vector3 exitPosition = car.transform.position + exitOffset;
 
-                Debug.Log($"📌 Exit Position Calculated: {exitPosition}");
+               // Debug.Log($"📌 Exit Position Calculated: {exitPosition}");
 
                 // ✅ Temporarily disable CharacterController to move the player
                 _controller.enabled = false;
                 playerRoot.position = exitPosition; // Move player next to the car
                 _controller.enabled = true;  // Re-enable CharacterController
 
-                Debug.Log($"🚶‍♂️ Player New Position: {playerRoot.position}");
+              //  Debug.Log($"🚶‍♂️ Player New Position: {playerRoot.position}");
 
                 // ✅ Stop the car from moving when exiting
                 PrometeoCarController carController = car.GetComponent<PrometeoCarController>();
@@ -428,7 +428,7 @@ namespace StarterAssets
                     carController.isPlayerInside = false;
                     carController.enabled = false; // Disable driving
                     carController.carSpeed = 0;    // Set car speed to zero
-                    Debug.Log("🚗 Car controls DISABLED!");
+                  //  Debug.Log("🚗 Car controls DISABLED!");
                 }
                 else
                 {
