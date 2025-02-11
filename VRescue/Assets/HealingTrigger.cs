@@ -14,7 +14,7 @@ public class HealingTrigger : MonoBehaviour {
 
     void Update()
     {
-        if (isPlayerNear && Input.GetKeyDown(KeyCode.E)) // Press "E" to start healing
+        if (isPlayerNear && Input.GetKeyDown(KeyCode.H)) // Press "H" to start healing
         {
             animator.SetTrigger("StartHealing");
             isHealing = true;  // Healing process starts
@@ -22,7 +22,7 @@ public class HealingTrigger : MonoBehaviour {
             Debug.Log("Healing started! Press 'H' 10 times to heal.");
         }
 
-        if (isHealing ) // Press "H" to heal
+        if (isHealing ) 
         {
             
            
@@ -43,7 +43,7 @@ public class HealingTrigger : MonoBehaviour {
         if (other.CompareTag("Player")) // Ensure the Player has the "Player" tag
         {
             isPlayerNear = true;
-            Debug.Log("Player is near. Press 'E' to heal.");
+            Debug.Log("Player is near. Press 'H' to heal.");
         }
     }
 
