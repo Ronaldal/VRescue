@@ -43,12 +43,21 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 5cf2f8f7b80b88e4387cd662a513a231, type: 3}
     instantiationMode: 0
+<<<<<<< HEAD
   - dependency: {fileID: 919132149155446097, guid: 5b6ad574ad66fb2409080b4788298ddc, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 8300000, guid: 186de84b3207156479abe98f4958fed0, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 919132149155446097, guid: cffcf3bcd9b117044b46338256814cda, type: 3}
     instantiationMode: 0
+=======
+  - dependency: {fileID: -5475051401550479605, guid: b04441f4a83ad224d92d547d170c366b, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 8300000, guid: 186de84b3207156479abe98f4958fed0, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: -5475051401550479605, guid: 8258ab4a37f447c48ac3c26cbdb4c032, type: 3}
+    instantiationMode: 1
+>>>>>>> origin/car-accident-and-collider
   - dependency: {fileID: 2800000, guid: 7aa03bbf1145d80438111302e0139094, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 4121091811543088291, guid: ddf4ea2625767fd4bb4153e7e4009ad5, type: 3}
@@ -56,6 +65,8 @@ MonoBehaviour:
   - dependency: {fileID: 2800000, guid: 5781945a21f9b4842a733da2dc5bf224, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 919132149155446097, guid: 16114d403eabb53438de032c6f0d1deb, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 4900cb10087a53f4e8b30521648b6e13, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 919132149155446097, guid: 8269a9f8cf495034c817722ac21f309f, type: 3}
     instantiationMode: 0
@@ -67,6 +78,8 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 34bf97c9a44d6a24e9aad37f9f1e5e3d, type: 3}
     instantiationMode: 0
+  - dependency: {fileID: -5475051401550479605, guid: 89c32740b629abb41bf9b65e3a64c373, type: 3}
+    instantiationMode: 1
   - dependency: {fileID: 8300000, guid: 274649b0e221539409070ebf6c18918b, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: e5dae200ef993dc458181b90687616ae, type: 3}
@@ -81,6 +94,8 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 919132149155446097, guid: 98f277b0c8055e143b2fcf058d3c27dc, type: 3}
     instantiationMode: 0
+  - dependency: {fileID: -5475051401550479605, guid: e9398b7940890a74eafc240b5a593541, type: 3}
+    instantiationMode: 1
   - dependency: {fileID: 2800000, guid: c6866b951b8f3da479d9f8822255ff51, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 919132149155446097, guid: 12e52e465ed793a4d801955e9f964a82, type: 3}
@@ -93,7 +108,7 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 8436467218ffd39458893e7d71ef922a, type: 2}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 7def4f1ef16215342ba8bb0f9e8b057f, type: 3}
+  - dependency: {fileID: 100000, guid: e68912a050d173e4e9b84a0cf22d816a, type: 3}
     instantiationMode: 0
   - dependency: {fileID: -927199367670048503, guid: 7f2eb32a90aace349adccd6efbc6bd9b, type: 3}
     instantiationMode: 0
@@ -101,6 +116,13 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 8900000, guid: 3303e99dd3c59fe48bc367798406adfb, type: 3}
     instantiationMode: 0
+<<<<<<< HEAD
+=======
+  - dependency: {fileID: 2800000, guid: 7def4f1ef16215342ba8bb0f9e8b057f, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: -5475051401550479605, guid: 74ce720b09dcad14690aca1cb7b6f2dc, type: 3}
+    instantiationMode: 1
+>>>>>>> origin/car-accident-and-collider
   - dependency: {fileID: 2800000, guid: 58552de7d543f6e4095feb3806e56f4f, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: a0e6a4d63829b8e4ebae2de28173503e, type: 3}
@@ -112,6 +134,8 @@ MonoBehaviour:
   - dependency: {fileID: 2100000, guid: 760ea8238d6219c42b2739f693d4c834, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 8300000, guid: 29841e7d5bbfb5b419c9ad16ca8bc4c1, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 10900000, guid: 5248225944112fb418a213fa587fe10d, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 95836ce2bec877a4a8e8669de12ee50a, type: 3}
     instantiationMode: 0
@@ -125,35 +149,44 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: f984fae445e929149af21237b556579a, type: 3}
     instantiationMode: 0
+<<<<<<< HEAD
   - dependency: {fileID: 2800000, guid: fe33384f0e6c7914d8b8ab3ed1d4240e, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 919132149155446097, guid: 4e893eafb21ebc44a8269edda0848669, type: 3}
     instantiationMode: 0
+=======
+>>>>>>> origin/car-accident-and-collider
   - dependency: {fileID: 2800000, guid: 3028dc075ba8c584d9bc7d1e0255e038, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2100000, guid: 975b4d94cd15da34d833f64957a8479a, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 7344874181333496819, guid: ab4ea67cd9337c341af0bd7182c60f92, type: 3}
     instantiationMode: 0
+<<<<<<< HEAD
   - dependency: {fileID: 919132149155446097, guid: 8ef3dc744ab293d4ea87fd4c59a15afd, type: 3}
     instantiationMode: 0
+=======
+>>>>>>> origin/car-accident-and-collider
   - dependency: {fileID: 114418, guid: 9b8fc966f95ea9c4194dc091fc40b478, type: 3}
-    instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 0e4095652d1df0c47ae7123aa7ba1597, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 114418, guid: 956bd2acf7aae244dac8fc20cf57858d, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 05f4fa7b0b609ea48b50a2ee5d1e63ef, type: 3}
     instantiationMode: 0
+<<<<<<< HEAD
+  - dependency: {fileID: 114418, guid: 956bd2acf7aae244dac8fc20cf57858d, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 05f4fa7b0b609ea48b50a2ee5d1e63ef, type: 3}
+    instantiationMode: 0
+=======
+>>>>>>> origin/car-accident-and-collider
   - dependency: {fileID: 8300000, guid: 1a91fcd19acf1e54bba0945d9f390849, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2100000, guid: da780beb78a91484aa965294e12f428e, type: 2}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: fa41cc63b7bd56f4da64009c1c218880, type: 3}
-    instantiationMode: 0
   - dependency: {fileID: 2100000, guid: ed572d8002158994083807470ac48cfe, type: 2}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 05d4689f7d9f6704f99173e1df273854, type: 3}
+  - dependency: {fileID: 2800000, guid: fa41cc63b7bd56f4da64009c1c218880, type: 3}
     instantiationMode: 0
   - dependency: {fileID: 919132149155446097, guid: 3c033631149b9c541bcf155cd94cccba, type: 3}
     instantiationMode: 0
@@ -181,13 +214,22 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 2800000, guid: 9cc84026e98cbc54e9aaf6ab68b8fe3f, type: 3}
     instantiationMode: 0
-  - dependency: {fileID: 2800000, guid: 65b8aa6d922ef71448a68e8fa1ae6fa9, type: 3}
-    instantiationMode: 0
   - dependency: {fileID: 2800000, guid: fdc0d4283185d854dbf57e4353e91784, type: 3}
     instantiationMode: 0
+<<<<<<< HEAD
   - dependency: {fileID: 2800000, guid: 676000b41742dee47bb1796c4d77303f, type: 3}
     instantiationMode: 0
+=======
+  - dependency: {fileID: 2800000, guid: dffa3acda27bbe340a06c88c18b39539, type: 3}
+    instantiationMode: 0
+  - dependency: {fileID: -5475051401550479605, guid: 1b4ecad27a9bc714e8d3af3ffb8a368c, type: 3}
+    instantiationMode: 1
+  - dependency: {fileID: 10900000, guid: 33eafb83c6bce0842b6887eebaf95436, type: 3}
+    instantiationMode: 1
+>>>>>>> origin/car-accident-and-collider
   - dependency: {fileID: 4890085278179872738, guid: d5471f4707b4dc1489debf187ce319ca, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 112000000, guid: fae11d47a598ffe47a88013444659d76, type: 2}
     instantiationMode: 0
   - dependency: {fileID: 2100000, guid: 0507e1e4370429b4bb425498fbf1a165, type: 2}
     instantiationMode: 0
@@ -211,7 +253,13 @@ MonoBehaviour:
     instantiationMode: 0
   - dependency: {fileID: 2800000, guid: 46ae3471803bb3d4fb909806703ecca1, type: 3}
     instantiationMode: 0
+<<<<<<< HEAD
   - dependency: {fileID: 2800000, guid: 02d04e6dbab6c9f43a9ff0e36a0ca08c, type: 3}
+=======
+  - dependency: {fileID: 2100000, guid: e823cd5b5d27c0f4b8256e7c12ee3e6d, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 2800000, guid: 659d5ca1eb87c37458310b40eadcee3c, type: 3}
+>>>>>>> origin/car-accident-and-collider
     instantiationMode: 0
   - dependency: {fileID: 100000, guid: c7a6fbd7c39f69145870a6fa88da376e, type: 3}
     instantiationMode: 0
@@ -225,11 +273,18 @@ MonoBehaviour:
     instantiationMode: 1
   - dependency: {fileID: 8574412962073106934, guid: 817189264b0e80640914d7cfce851b15, type: 2}
     instantiationMode: 1
+<<<<<<< HEAD
   - dependency: {fileID: 2100000, guid: 4e7ecadbbe8d16c4f868cc7210543073, type: 2}
     instantiationMode: 0
+=======
+  - dependency: {fileID: 10900000, guid: 8b4aa8c48881d4142b1c30e408b503d8, type: 3}
+    instantiationMode: 1
+>>>>>>> origin/car-accident-and-collider
   - dependency: {fileID: 2800000, guid: 5f2a108eb023faf43a809979fd3d38f2, type: 3}
     instantiationMode: 1
   - dependency: {fileID: 2100000, guid: 576b30ace62aa7240bbbba9efd4d4c05, type: 2}
+    instantiationMode: 0
+  - dependency: {fileID: 100000, guid: 5d3f9cd50f0a9f040bfebb97c73e2f36, type: 3}
     instantiationMode: 0
   templatePipeline: {fileID: 0}
   badge: {fileID: 0}

@@ -8,7 +8,12 @@ TagManager:
   - Car camera
   - CinemachineTarget
   - CarCameraTarget
+<<<<<<< HEAD
   - Injured
+=======
+  - Barrier
+  - Railing
+>>>>>>> origin/car-accident-and-collider
   layers:
   - Default
   - TransparentFX
