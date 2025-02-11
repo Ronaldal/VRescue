@@ -2,6 +2,7 @@
 using System.Collections;
 
 using Cinemachine;
+//using static System.Net.Mime.MediaTypeNames;
 
 
 
@@ -151,6 +152,7 @@ namespace StarterAssets
 
         private void Start()
         {
+            UnityEngine.Application.targetFrameRate = 60;
             _cinemachineTargetYaw = CinemachineCameraTarget.transform.rotation.eulerAngles.y;
             
             _hasAnimator = TryGetComponent(out _animator);

@@ -8,6 +8,8 @@ TagManager:
   - Car camera
   - CinemachineTarget
   - CarCameraTarget
+  - Barrier
+  - Railing
   layers:
   - Default
   - TransparentFX
