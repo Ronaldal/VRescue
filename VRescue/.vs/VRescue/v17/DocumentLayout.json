@@ -3,12 +3,21 @@
   "WorkspaceRootPath": "C:\\Users\\roni2\\OneDrive\\\u05DE\u05E1\u05DE\u05DB\u05D9\u05DD\\GitHub\\VRescue\\VRescue\\",
   "Documents": [
     {
+<<<<<<< HEAD
       "AbsoluteMoniker": "D:0:0:{7FD4D23A-0745-94F9-9396-FD3425235792}|Assembly-CSharp.csproj|c:\\users\\roni2\\onedrive\\\u05DE\u05E1\u05DE\u05DB\u05D9\u05DD\\github\\vrescue\\vrescue\\assets\\rotatecube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD4D23A-0745-94F9-9396-FD3425235792}|Assembly-CSharp.csproj|solutionrelative:assets\\rotatecube.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{7FD4D23A-0745-94F9-9396-FD3425235792}|Assembly-CSharp.csproj|C:\\Users\\roni2\\OneDrive\\\u05DE\u05E1\u05DE\u05DB\u05D9\u05DD\\GitHub\\VRescue\\VRescue\\assets\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7FD4D23A-0745-94F9-9396-FD3425235792}|Assembly-CSharp.csproj|solutionrelative:assets\\box.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+=======
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\97250\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\computer science\\final project\\VRescue\\VRescue\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\97250\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\computer science\\final project\\VRescue\\VRescue\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoTouchInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoTouchInput.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+>>>>>>> origin/car-accident-and-collider
     }
   ],
   "DocumentGroupContainers": [
@@ -23,6 +32,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 1,
+<<<<<<< HEAD
               "Title": "box.cs",
               "DocumentMoniker": "C:\\Users\\roni2\\OneDrive\\\u05DE\u05E1\u05DE\u05DB\u05D9\u05DD\\GitHub\\VRescue\\VRescue\\Assets\\box.cs",
               "RelativeDocumentMoniker": "Assets\\box.cs",
@@ -31,10 +41,22 @@
               "ViewState": "AQIAAEMAAAAAAAAAAAAkwAQAAAAQAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T18:00:23.197Z"
+=======
+              "Title": "PrometeoTouchInput.cs",
+              "DocumentMoniker": "C:\\Users\\97250\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\computer science\\final project\\VRescue\\VRescue\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoTouchInput.cs",
+              "RelativeDocumentMoniker": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoTouchInput.cs",
+              "ToolTip": "C:\\Users\\97250\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\computer science\\final project\\VRescue\\VRescue\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoTouchInput.cs",
+              "RelativeToolTip": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoTouchInput.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T17:56:55.755Z",
+              "EditorCaption": ""
+>>>>>>> origin/car-accident-and-collider
             },
             {
               "$type": "Document",
               "DocumentIndex": 0,
+<<<<<<< HEAD
               "Title": "RotateCube.cs",
               "DocumentMoniker": "C:\\Users\\roni2\\OneDrive\\\u05DE\u05E1\u05DE\u05DB\u05D9\u05DD\\GitHub\\VRescue\\VRescue\\Assets\\RotateCube.cs",
               "RelativeDocumentMoniker": "Assets\\RotateCube.cs",
@@ -43,6 +65,16 @@
               "ViewState": "AQIAADkAAAAAAAAAAAAYwEQAAAAsAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-02-05T17:58:57.294Z",
+=======
+              "Title": "PrometeoCarController.cs",
+              "DocumentMoniker": "C:\\Users\\97250\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\computer science\\final project\\VRescue\\VRescue\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "RelativeDocumentMoniker": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "ToolTip": "C:\\Users\\97250\\OneDrive\\\u05E9\u05D5\u05DC\u05D7\u05DF \u05D4\u05E2\u05D1\u05D5\u05D3\u05D4\\computer science\\final project\\VRescue\\VRescue\\Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "RelativeToolTip": "Assets\\PROMETEO - Car Controller\\Scripts\\PrometeoCarController.cs",
+              "ViewState": "AgIAAGcDAAAAAAAAAAAowI8DAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-08T12:12:16.878Z",
+>>>>>>> origin/car-accident-and-collider
               "EditorCaption": ""
             }
           ]
