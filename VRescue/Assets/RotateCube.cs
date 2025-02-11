@@ -8,7 +8,8 @@ public class RotateCube : MonoBehaviour {
     private float qw, qx, qy, qz;
     private bool isNewDataAvailable = false;
     private Thread serialThread;
-
+    public HealingTrigger healingTrigger;
+    private string lastButtonState = "N";
     void Start()
     {
         try
@@ -17,6 +18,7 @@ public class RotateCube : MonoBehaviour {
             Debug.Log("stream.Open();");
             serialThread = new Thread(ReadSerialData);
             serialThread.Start();
+            healingTrigger.healCount = 0;
         }
         catch (System.Exception e)
         {
@@ -42,9 +44,20 @@ public class RotateCube : MonoBehaviour {
                     qx = float.Parse(strData[1]);
                     qy = float.Parse(strData[2]);
                     qz = float.Parse(strData[3]);
+                    string buttonState = strData[4].Trim(); // "N" or "Y"
 
-                    isNewDataAvailable = true; // Mark data as ready
-
+                    // Detect state change (from N->Y or Y->N)
+                    if (buttonState != lastButtonState)
+                    {
+                        
+                        if (buttonState == "Y")
+                        {
+                            healingTrigger.healCount++; 
+                            Debug.Log("Button Pressed: " + healingTrigger.healCount);
+                        }
+                        lastButtonState = buttonState; 
+                    }
+                    isNewDataAvailable = true;
                 }
             }
             catch (System.Exception e)
