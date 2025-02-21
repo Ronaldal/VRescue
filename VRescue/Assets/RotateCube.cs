@@ -1,6 +1,7 @@
 using System.IO.Ports;
 using System.Threading;
 using UnityEngine;
+using System.Collections;
 
 public class RotateCube : MonoBehaviour {
     SerialPort stream = new SerialPort("COM3", 115200);
@@ -33,9 +34,8 @@ public class RotateCube : MonoBehaviour {
         {
             try
             {
- 
-
                 string rawData = stream.ReadLine();
+                Debug.Log(rawData);
                 string[] strData = rawData.Split(',');
                 if (strData.Length == 5) // Ensure correct data length
                 {
@@ -63,10 +63,10 @@ public class RotateCube : MonoBehaviour {
             catch (System.Exception e)
             {
                 Debug.LogWarning("Serial Read Error: " + e.Message);
-
             }
         }
     }
+
 
     void Update()
     {
