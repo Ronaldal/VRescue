@@ -35,7 +35,7 @@ public class RotateCube : MonoBehaviour {
             try
             {
                 string rawData = stream.ReadLine();
-                Debug.Log(rawData);
+                
                 string[] strData = rawData.Split(',');
                 if (strData.Length == 5) // Ensure correct data length
                 {
