@@ -6,6 +6,7 @@ public class HealingTrigger : MonoBehaviour {
     private bool isHealing = false; // Track if healing has started
     public int healCount = 0; // Counter for "H" key presses
     public int healGoal = 10; // Number of times "H" must be pressed to heal
+    public GameObject healText;
 
     void Start()
     {
@@ -43,7 +44,7 @@ public class HealingTrigger : MonoBehaviour {
         if (other.CompareTag("Player")) // Ensure the Player has the "Player" tag
         {
             isPlayerNear = true;
-            Debug.Log("Player is near. Press 'H' to heal.");
+            healText.SetActive(true);
         }
     }
 
@@ -53,7 +54,7 @@ public class HealingTrigger : MonoBehaviour {
         {
             isPlayerNear = false;
             isHealing = false; // Reset healing if the player leaves
-            Debug.Log("Player left healing area.");
+            healText.SetActive(false);
         }
     }
 }
