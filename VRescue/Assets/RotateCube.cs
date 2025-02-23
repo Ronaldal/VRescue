@@ -72,8 +72,8 @@ public class RotateCube : MonoBehaviour {
     {
         if (isNewDataAvailable)
         {
-            transform.rotation = new Quaternion(-qy, -qz, qx, qw);
-            isNewDataAvailable = false; // Reset flag after applying data
+            transform.rotation = new Quaternion(qy, -qz, -qx, qw);
+            isNewDataAvailable = false; 
         }
     }
 
