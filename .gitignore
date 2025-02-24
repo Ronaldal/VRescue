@@ -42,10 +42,8 @@ LightingData*
 Assets/**/*.shadergraph.meta
 Assets/**/*.shadergraph
 Assets/**/*.compute
-Assets/**/*.asset
+*.Assets/Tree9
 
-# Meta files
-*.meta
 
 # Crash reports
 sysinfo.txt
@@ -80,3 +78,10 @@ Assets/TextMesh Pro/
 
 # Unity Asset Store tools
 Assets/AssetStoreTools*
+/VRescue/Assets/Tree9
+/VRescue/Assets/Grass And Flowers Pack 1
+/VRescue/Assets/RoadArchitect
+/VRescue/Assets/TerrainSampleAssets
+/VRescue/Assets/Male Injured Pack
+/VRescue/.vs
+/VRescue/.vs
